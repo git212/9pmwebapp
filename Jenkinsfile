@@ -33,7 +33,11 @@ pipeline{
     }
     post{
         success{
-            echo "sending email about build success"
+            mail body: '''Hi Team, the app is successfully deployed
+
+Thanks,
+DevOps Team.
+Java Home''', subject: 'successfully Deployed', to: 'mahantabharat312@gmail.com'
         }
     }
 }
