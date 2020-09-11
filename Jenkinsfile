@@ -40,5 +40,15 @@ Thanks,
 DevOps Team.
 Java Home""", subject: "${JOB_NAME}successfully Deployed", to: 'mahantabharat312@gmail.com'
         }
+
+        unstable{
+            mail body: """Hi Team, the app is deployment failed
+            ${BUILD_URL}
+
+Thanks,
+DevOps Team.
+Java Home""", subject: "${JOB_NAME} - Deployment failed", to: 'mahantabharat312@gmail.com'
+        }
     }
-}
+
+}  
