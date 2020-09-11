@@ -41,7 +41,7 @@ DevOps Team.
 Java Home""", subject: "${JOB_NAME}successfully Deployed", to: 'mahantabharat312@gmail.com'
         }
 
-        unstable{
+        failure {
             mail body: """Hi Team, the app is deployment failed
             ${BUILD_URL}
 
