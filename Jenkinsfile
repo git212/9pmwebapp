@@ -1,16 +1,17 @@
 pipeline{
     agent any
     stages{
-        stages(Parallel Demo){
-
-            parallel(
-              task1: {
-                echo "This is task1"
-              },
-              task2: {
-                echo "This is task2"
-              }
-            )
+        stage(Parallel Demo){
+            steps{ 
+                parallel(
+                  task1: {
+                    echo "This is task1"
+                  },
+                  task2: {
+                    echo "This is task2"
+                  }
+                )
+            }
         }
     }
 }
